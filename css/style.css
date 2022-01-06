@@ -1,0 +1,695 @@
+html,
+body {
+    max-height: 100%;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #151515;
+}
+
+body:active{
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.fundo1 {
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    z-index: 0;
+    background-image: url("../assets/img/fundo1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 100%;
+}
+
+.fundo2 {
+    position: absolute;
+    top: 0vh;
+    left: 0;
+    z-index: 1;
+    background-image: url("../assets/img/fundo2.png");
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.fundo3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-image: url("../assets/img/fundo3.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 100%;
+}
+
+.fundo4 {
+    position: absolute;
+    top: 0vh;
+    left: 0;
+    z-index: 0;
+    background-image: url("../assets/img/fundo1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 100%;
+}
+
+.fundo5 {
+    position: absolute;
+    top: 0vh;
+    left: 0;
+    z-index: 1;
+    background-image: url("../assets/img/fundo3.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 100%;
+}
+
+.fundo6 {
+    position: absolute;
+    top: 200vh;
+    left: 0;
+    z-index: 0;
+    background-image: url("../assets/img/fundo1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 100%;
+}
+
+.fundo7 {
+    position: absolute;
+    top: 0vh;
+    left: 0;
+    z-index: 1;
+    background-image: url("../assets/img/fundo5.png");
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.fundo8 {
+    position: absolute;
+    top: 300vh;
+    left: 0;
+    z-index: 0;
+    background-image: url("../assets/img/fundo1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 100%;
+}
+
+.fundo9 {
+    position: absolute;
+    top: 0vh;
+    left: 0;
+    z-index: 1;
+    background-image: url("../assets/img/fundo4.png");
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.fundo10 {
+    position: absolute;
+    top: 400vh;
+    left: 0;
+    z-index: 0;
+    background-image: url("../assets/img/fundo1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 10%;
+}
+
+.fundo10 p{
+    text-align: center;
+    margin: auto;
+    margin-top: 3%;
+    font-size: 0.75rem;
+    opacity: 60%;
+}
+
+.fundo {
+    position: absolute;
+}
+
+.navmenu {
+    top: 0;
+    left: 0;
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    color: white;
+    font-weight: bolder;
+    width: 20%;
+}
+
+.red {
+    color: red;
+}
+
+.Btns {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    font-size: 24px;
+    color: white;
+    font-weight: 400;
+}
+
+.detBtn {
+    width: 7vw;
+    text-align: center;
+    margin: auto;
+    margin-right: 1vw;
+}
+
+.detBtn .red {
+    display: none;
+}
+
+.detBtn:hover .red {
+    display: inline;
+    cursor: pointer;
+}
+
+.detBtn:hover .hide {
+    display: none;
+}
+
+.sobreBtn .red {
+    display: none;
+}
+
+.sobreBtn:hover .red {
+    display: inline;
+    cursor: pointer;
+}
+
+.sobreBtn:hover .hide {
+    display: none;
+}
+
+.sobreBtn {
+    width: 7vw;
+    margin-left: 1vw;
+    text-align: center;
+    margin: auto;
+}
+
+.trabalhosBtn .red {
+    display: none;
+}
+
+.trabalhosBtn:hover .red {
+    display: inline;
+    cursor: pointer;
+}
+
+.trabalhosBtn:hover .hide {
+    display: none;
+}
+
+.trabalhosBtn {
+    width: 7vw;
+    margin-left: 1vw;
+    text-align: center;
+    margin: auto;
+}
+
+.hide {
+    color: red;
+}
+
+.hero-section {
+    height: 70vh;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    padding-left: 10vw;
+}
+
+.hero-text {
+    /*width: 7.5ch;*/
+    /*animation: typing 2s steps(22), blink .5s step-end infinite alternate;*/
+    /*white-space: nowrap;*/
+    overflow: hidden;
+    /*border-right: 2vw solid;*/
+    font-size: 10rem;
+    font-weight: 800;
+}
+
+.herosocial {
+    position: absolute;
+    right: 0;
+}
+
+.socialText {
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 0;
+}
+
+.socialText a:hover {
+    color: red;
+}
+
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+}
+
+.info {
+    position: relative;
+    top: 17vh;
+    left: 60%;
+}
+
+.nome {
+    font-size: 1.3em;
+    margin-bottom: 0;
+    line-height: 1.1em;
+}
+
+.detalhes {
+    font-size: 0.95em;
+    margin-bottom: 5vh;
+    line-height: 0.6em;
+}
+
+/* BARRAS DE ATRIBUTOS */
+.AtrBar {
+    margin-bottom: 1.5vh;
+}
+
+/* TÍTULO ATRIBUTO */
+.atributo {
+    margin-left: 0;
+    line-height: 2.5em;
+}
+
+/* ANIMAÇÃO BARRAS */
+@keyframes EsqParaDir {
+    0% {
+        transform: scaleX(0%);
+    }
+
+    100% {
+        transform: scaleX(100%);
+    }
+}
+
+/* DEFINIÇÃO PRIMEIRA BARRA */
+.barra1 {
+    display: flex;
+    flex-direction: row;
+    max-width: 20vw;
+}
+
+.barra1 .primeira {
+    width: 14vw;
+    height: 0.4vh;
+    background-color: red;
+    /*animation: 1.2s ease-out 0s 1 EsqParaDir;
+    transform-origin: 0% 50%;*/
+    z-index: 1;
+}
+
+.barra1 .primeira.animacao {
+    animation: 1.2s ease-out 0s 1 EsqParaDir;
+    transform-origin: 0% 50%;
+}
+
+.barra1 .segunda {
+    width: 20vw;
+    height: 0.4vh;
+    background-color: #721515;
+    z-index: -2;
+}
+
+/* DEFINIÇÃO SEGUNDA BARRA */
+.barra2 {
+    display: flex;
+    flex-direction: row;
+    max-width: 20vw;
+}
+
+.barra2 .primeira {
+    width: 16vw;
+    height: 0.4vh;
+    background-color: red;
+    z-index: 1;
+}
+
+.barra2 .primeira.animacao {
+    animation: 1.4s ease-out 0s 1 EsqParaDir;
+    transform-origin: 0% 50%;
+}
+
+.barra2 .segunda {
+    width: 20vw;
+    height: 0.4vh;
+    background-color: #721515;
+    z-index: -2;
+}
+
+/* DEFINIÇÃO TERCEIRA BARRA */
+.barra3 {
+    display: flex;
+    flex-direction: row;
+    max-width: 20vw;
+}
+
+.barra3 .primeira {
+    width: 12vw;
+    height: 0.4vh;
+    background-color: red;
+    z-index: 1;
+}
+
+.barra3 .primeira.animacao {
+    animation: 1.6s ease-out 0s 1 EsqParaDir;
+    transform-origin: 0% 50%;
+}
+
+.barra3 .segunda {
+    width: 20vw;
+    height: 0.4vh;
+    background-color: #721515;
+    z-index: -2;
+}
+
+/* DEFINIÇÃO QUARTA BARRA */
+.barra4 {
+    display: flex;
+    flex-direction: row;
+    max-width: 20vw;
+}
+
+.barra4 .primeira {
+    width: 10vw;
+    height: 0.4vh;
+    background-color: red;
+    z-index: 1;
+}
+
+.barra4 .primeira.animacao {
+    animation: 1.8s ease-out 0s 1 EsqParaDir;
+    transform-origin: 0% 50%;
+}
+
+.barra4 .segunda {
+    width: 20vw;
+    height: 0.4vh;
+    background-color: #721515;
+    z-index: -2;
+}
+
+/* DEFINIÇÃO QUINTA BARRA */
+.barra5 {
+    display: flex;
+    flex-direction: row;
+    max-width: 20vw;
+}
+
+.barra5 .primeira {
+    width: 18vw;
+    height: 0.4vh;
+    background-color: red;
+    z-index: 1;
+}
+
+.barra5 .primeira.animacao {
+    animation: 2s ease-out 0s 1 EsqParaDir;
+    transform-origin: 0% 50%;
+}
+
+
+.barra5 .segunda {
+    width: 20vw;
+    height: 0.4vh;
+    background-color: #721515;
+    z-index: -2;
+}
+
+.divTxtSobre{
+    vertical-align: middle;
+    position: relative;
+    width: 30%;
+    left: 10%;
+    margin-top: 15%;
+    font-size: 1.3rem;
+}
+
+.vazio {
+    width: 50%;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    margin: auto;
+    height: 80%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+    height: 33%;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: auto;
+}
+
+.coluna {
+    width: 25%;
+    height: 100%;
+    background-color: aqua;
+    margin: auto;
+}
+
+.meio{
+    background-color: transparent;
+    width: 50%;
+}
+
+.row.um .coluna.esq {
+    background-image: url(../assets/img/trabalhoandebol.jpg);
+    background-size: 100%;
+    background-position: center;
+    transition: 1.3s;
+}
+
+.row.um .coluna.dir {
+    background-image: url(../assets/img/trabalhophive.jpg);
+    background-size: 100%;
+    background-position: center;
+    transition: 1.3s;
+}
+
+.row.dois .coluna.esq {
+    background-image: url(../assets/img/trabalhofhc.jpg);
+    background-size: 100%;
+    background-position: center;
+    transition: 1.3s;
+}
+
+.row.dois .coluna.dir {
+    background-image: url(../assets/img/trabalho42.png);
+    background-size: 100%;
+    background-position: center;
+    transition: 1.3s;
+}
+
+.row.tres .coluna.esq {
+    background-image: url(../assets/img/trabalhobarca.jpg);
+    background-size: 100%;
+    background-position: center;
+    transition: 1.3s;
+}
+
+.row.tres .coluna.dir {
+    background-image: url(../assets/img/trabalhoreencontro.png);
+    background-size: 100%;
+    background-position: center;
+    transition: 1.3s;
+}
+
+
+.row.um .coluna.esq:hover {
+    background-size: 115%;
+    cursor: pointer;
+}
+
+.row.um .coluna.esq:hover .bgCor {
+    opacity: 90%;
+}
+
+.row.um .coluna.dir:hover {
+    background-size: 115%;
+    cursor: pointer;
+}
+
+.row.um .coluna.dir:hover .bgCor {
+    opacity: 90%;
+}
+
+.row.dois .coluna.esq:hover {
+    background-size: 115%;
+    cursor: pointer;
+}
+
+.row.dois .coluna.esq:hover .bgCor {
+    opacity: 90%;
+}
+
+.row.dois .coluna.dir:hover {
+    background-size: 115%;
+    cursor: pointer;
+}
+
+.row.dois .coluna.dir:hover .bgCor {
+    opacity: 90%;
+}
+
+.row.tres .coluna.esq:hover {
+    background-size: 115%;
+    cursor: pointer;
+}
+
+.row.tres .coluna.esq:hover .bgCor {
+    opacity: 90%;
+}
+
+.row.tres .coluna.dir:hover {
+    background-size: 115%;
+    cursor: pointer;
+}
+
+.row.tres .coluna.dir:hover .bgCor {
+    opacity: 90%;
+}
+
+.bgCor {
+    background-color: #222;
+    opacity: 85%;
+    height: 100%;
+    width: 100%;
+    opacity: 0%;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+}
+
+.bgCor div {
+    height: 50%;
+}
+
+.descTrabalho {
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.descTrabalho div {
+    height: 50%;
+}
+
+.trabTitulo {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+    line-height: 0.5rem;
+}
+
+.trabAno {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: red;
+    line-height: 0.5rem;
+    opacity: 50%;
+}
+
+.trabArea{
+    font-size: 0.8rem;
+    opacity: 70%;
+    color: red;
+}
+
+.topo {
+    position: absolute;
+    bottom: 5%;
+    right: 6%;
+}
+
+.topo:hover {
+    color: red;
+}
