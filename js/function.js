@@ -411,7 +411,7 @@ markers:false
           scrub:true,
           id: "SCROLLLLLLLLLLLLLLLLLERRR",
           start: "100% 100%",
-          end: "200% -200%",
+          end: "300% -200%",
          
       },
       css:{marginLeft: "-140vw"}
