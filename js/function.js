@@ -357,35 +357,6 @@ markers:false
    
    });
 
-   gsap.to(".center6", {
-
-      scrollTrigger: {
-         trigger: ".center6",
-  scrub:true,
- id: "HHHEEERRREEEE",
-  start: "top 20%",
-  end: "top 0%",
-
-      },
-      
-      css:{ rotation:"0",scaleX:1.5, scaleY:1.5,}
-     
-
-   });
-   gsap.to(".center6", {
-
-      scrollTrigger: {
-         trigger: ".center6",
-   scrub:true,
-   id: "PIIIIIIIIIIIIINN",
-   start: "top 30%",
-   end: "top 0%",
-   pin:true,
-  
-      },
-   
-   });
-
 
 
  gsap.to(".back", {
